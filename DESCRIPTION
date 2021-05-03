@@ -1,16 +1,23 @@
 Package: readBrukerNMR
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Title: Read Bruker NMR Data Sets
+Version: 0.1.0
+Authors@R: c(
+    person("Bryan A.", "Hanson",
+      role = c("aut", "cre"), email =
+      "hanson@depauw.edu",
+      comment = c(ORCID = "0000-0003-3536-8246")),
+    person("JJ", "Helmus",
+      role = c("cph", "ctb"),
+      comment = "author of the nmrglue Python module, https://github.com/jjhelmus/nmrglue"))
+Description: Read in Bruker NMR (Nuclear Magnetic Resonance) data.  Currently only reads processed data.  Built around the 'Python' 'nmrglue' package by JJ Helmus.
+Depends:
+  reticulate
+
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
+URL: https://bryanhanson.github.io/readBrukerNMR/
+BugReports: https://github.com/bryanhanson/readBrukerNMR/issues
+ByteCompile: TRUE
+Roxygen: list(markdown = TRUE, packages = "roxut", roclets = c("namespace", "rd", "roxut::tests_roclet"))
 RoxygenNote: 7.1.1
