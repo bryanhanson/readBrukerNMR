@@ -1,4 +1,4 @@
-def import_1D_pdata(file):
+def read_1D_pdata(file):
 
     import nmrglue as ng
     dic, data = ng.bruker.read_pdata(file)
