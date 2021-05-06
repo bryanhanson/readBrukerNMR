@@ -13,6 +13,14 @@
 #' @export
 #' @importFrom reticulate source_python
 #'
+#' @examples
+#' data_dir <- system.file("extdata/bmse000233/nmr/set01/1H/pdata/1",
+#'   package = "readBrukerNMR")
+#' demo <- read_Bruker_1D_NMR(data_dir)
+#' plot(demo$x, demo$y, type = "l",
+#'   xlim = c(5.5, 3), ylim = c(0, 6e4)
+#'   xlab = "ppm", ylab = "intensity")
+#' 
 read_Bruker_1D_NMR <- function(directory) {
 
   read_1D_pdata <- NULL # satisfy check process

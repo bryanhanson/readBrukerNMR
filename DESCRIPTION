@@ -1,7 +1,7 @@
 Package: readBrukerNMR
 Title: Read Bruker NMR Data Sets
-Date: 2021-05-05
-Version: 0.1.38
+Date: 2021-05-06
+Version: 0.1.39
 Authors@R: c(
     person("Bryan A.", "Hanson",
       role = c("aut", "cre"), email =
@@ -15,7 +15,6 @@ Depends:
   reticulate
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
 URL: https://bryanhanson.github.io/readBrukerNMR/
 BugReports: https://github.com/bryanhanson/readBrukerNMR/issues
 ByteCompile: TRUE
