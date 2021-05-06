@@ -1,0 +1,23 @@
+##TITLE= Parameter file, XWIN-NMR		Version 2.6
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##ORIGIN= Bruker Analytik GmbH
+##OWNER= cui
+$$ Sun Jan  8 13:24:20 2006 CST (UT-6h)  cui@pisa
+$$ /u/data/cui/nmr/cq_03012/3/scon
+##$BLKPA= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$BLKTR= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$DE1= 2
+##$DE2= -1
+##$DEADC= 3
+##$DEPA= 0.5
+##$DERX= 2
+##$PHASP4= (0..15)
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 
+##$PHASPR= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$SHAPPR= (0..15)
+1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 
+##END=

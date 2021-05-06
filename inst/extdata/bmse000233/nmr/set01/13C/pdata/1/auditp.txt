@@ -1,0 +1,18 @@
+##TITLE= Audit trail, TOPSPIN		Version 2.1
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= cschulte
+$$ /banyo2/data/cschulte/nmr/bmse000233/3/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2010-03-17 14:34:34.438 -0500>,<cschulte>,<watusi.nmrfam.wisc.edu>,<proc1d>,<TOPSPIN 2.1>,
+      <em BC_mod = 2 LB = 1 SI = 64K 
+       data hash MD5: 64K
+       E2 5E 80 6F 27 15 6A 56 72 57 05 5D 63 67 FF 51>)
+(   2,<2010-03-17 14:34:35.742 -0500>,<cschulte>,<watusi.nmrfam.wisc.edu>,<proc1d>,<TOPSPIN 2.1>,
+      <fp FT_mod = 6 PKNL = 1 SI = 64K PHC0 = 172.9073 PHC1 = -0.1157221 
+       data hash MD5: 64K
+       EF F7 5D 5E CD 78 49 35 77 0E 24 7E 8E 0E 07 E7>)
+##END=
+
+$$ hash MD5
+$$ 16 74 BC 77 48 16 FF C7 F7 B3 8F 71 78 43 72 FA

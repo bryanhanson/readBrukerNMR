@@ -26,6 +26,6 @@ If you use `@devel` you can get the development branch if it is available (and t
 
 ### License Information
 
-`readBrukerNMR` is distributed under the GPL-3 license, as stated in the DESCRIPTION file.  For more info, see the [GPL site.](https://gnu.org/licenses/gpl.html)
+`readBrukerNMR` is distributed under the GPL-3 license, as stated in the DESCRIPTION file.  For more info, see the [GPL site.](https://www.gnu.org/licenses/gpl.html)
 
 Questions?  hanson@depauw.edu
