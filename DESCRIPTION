@@ -13,8 +13,6 @@ Authors@R: c(
 Description: Read in Bruker NMR (Nuclear Magnetic Resonance) data.  Currently only reads processed data.  Built around the 'Python' 'nmrglue' package by JJ Helmus.
 Depends:
   reticulate
-Suggests:
-  tinytest
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
