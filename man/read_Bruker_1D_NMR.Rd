@@ -2,27 +2,30 @@
 % Please edit documentation in R/read_Bruker_1D_NMR.R
 \name{read_Bruker_1D_NMR}
 \alias{read_Bruker_1D_NMR}
-\title{Read Bruker 1D NMR Data Sets}
+\title{Read Processed Bruker 1D NMR Data Sets}
 \usage{
 read_Bruker_1D_NMR(directory)
 }
 \arguments{
-\item{directory}{Character.  The path to the \code{pdata} file.}
+\item{directory}{Character.  The path to an experiment in the \code{pdata} directory.
+See the example for a typical path.}
 }
 \value{
-COMPLETE THIS!
+A list with elements \code{metadata}, \code{x}, and \code{y}.
 }
 \description{
-This function will read a Bruker 1D NMR data set and return the pieces.
-Currently only processed data can be read.
+This function will read a *processed *Bruker 1D NMR data set and return the contents.
+Wraps a Python script using the
+functions of the \href{https://github.com/jjhelmus/nmrglue/}{\code{nmrglue}} module.
 }
 \examples{
 data_dir <- system.file("extdata/bmse000233/nmr/set01/1H/pdata/1",
   package = "readBrukerNMR")
 demo <- read_Bruker_1D_NMR(data_dir)
 plot(demo$x, demo$y, type = "l",
-  xlim = c(5.5, 3), ylim = c(0, 6e4)
-  xlab = "ppm", ylab = "intensity")
+  xlim = c(5.5, 3), ylim = c(0, 6e4),
+  xlab = "ppm", ylab = "intensity",
+  main = expression(Melibiose~phantom()^1*H~NMR~(BMRB~Entry~bmse000233)))
 
 }
 \author{

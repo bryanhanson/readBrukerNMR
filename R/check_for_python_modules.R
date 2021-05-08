@@ -1,5 +1,5 @@
 #'
-#' Look for Missing Python Modules and Optionally Install Them into a Virtual Environment
+#' Look for Needed Python Modules and Optionally Install Them into a Virtual Environment
 #'
 #' This function will check to see if the Python modules `numpy`,
 #' `scipy`, and `nmrglue` are installed, and optionally, install them into the
@@ -10,7 +10,7 @@
 #' @param install Logical.  If `TRUE`, install `numpy`, `scipy`, or `nmrglue`
 #'        modules if missing.
 #'
-#' @return Invisibly, a named logical vector giving the success or not of finding
+#' @return Invisibly, a named logical vector giving the success (or not) of finding
 #'         and possibly installing the modules of interest.
 #' 
 #' @author Bryan A. Hanson, hanson@@depauw.edu

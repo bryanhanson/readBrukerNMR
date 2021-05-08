@@ -1,7 +1,7 @@
 Package: readBrukerNMR
 Title: Read Bruker NMR Data Sets
 Date: 2021-05-06
-Version: 0.1.39
+Version: 0.1.43
 Authors@R: c(
     person("Bryan A.", "Hanson",
       role = c("aut", "cre"), email =
@@ -9,7 +9,10 @@ Authors@R: c(
       comment = c(ORCID = "0000-0003-3536-8246")),
     person("JJ", "Helmus",
       role = c("cph", "ctb"),
-      comment = "author of the nmrglue Python module, https://github.com/jjhelmus/nmrglue"))
+      comment = "author of the nmrglue Python module, https://github.com/jjhelmus/nmrglue"),
+    person("", "Biological Magnetic Resonance Data Bank",
+      role = "ctb",
+      comment = "source of included data set bmse000233"))
 Description: Read in Bruker NMR (Nuclear Magnetic Resonance) data.  Currently only reads processed data.  Built around the 'Python' 'nmrglue' package by JJ Helmus.
 Depends:
   reticulate

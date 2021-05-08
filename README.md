@@ -1,8 +1,10 @@
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) [![Downloads](https://cranlogs.r-pkg.org/badges/readBrukerNMR)](https://cran.r-project.org/package=readBrukerNMR)
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
+<!-- [![Downloads](https://cranlogs.r-pkg.org/badges/readBrukerNMR)](https://cran.r-project.org/package=readBrukerNMR) -->
 
 ## readBrukerNMR -- Read Bruker NMR Data Sets.
 
-Read in Bruker NMR (Nuclear Magnetic Resonance) data.  Currently only reads processed data.  Built around the Python [nmrglue](https://github.com/jjhelmus/nmrglue) package by JJ Helmus.
+Read in Bruker NMR (Nuclear Magnetic Resonance) data.  Currently only reads processed data. Built around the Python ['nmrglue'](https://github.com/jjhelmus/nmrglue/) module by JJ Helmus. Includes a data set from [BMRB](https://bmrb.io/) with permission for demonstration and testing. The included data are 1H and 13C NMR spectra of the disaccharide melibiose.  These spectra are a portion of the [bmse000233 data set](https://bmrb.io/metabolomics/mol_summary/show_data.php?id=bmse000233) hosted at the [Biological Magnetic Resonance Data Bank](https://dx.doi.org/10.1093/nar/gkm957) (used with permission).
 
 ## How to install readBrukerNMR
 
