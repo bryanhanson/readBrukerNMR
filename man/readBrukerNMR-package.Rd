@@ -8,7 +8,7 @@
 \description{
 Read in Bruker NMR (Nuclear Magnetic Resonance) data.  Currently only reads processed data.
 Built around the Python \href{https://github.com/jjhelmus/nmrglue/}{'nmrglue'} module by JJ Helmus.
-Includes a data set from \href{https://bmrb.io/}{BMRB} with permission for demonstration and testing.
+Includes a data set from \href{https://bmrb.io/}{BMRB} for demonstration and testing.
 The included data are 1H and 13C NMR spectra of the disaccharide melibiose.  These spectra are
 a portion of the
 \href{https://bmrb.io/metabolomics/mol_summary/show_data.php?id=bmse000233}{bmse000233 data set}
