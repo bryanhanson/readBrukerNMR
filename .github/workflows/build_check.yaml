@@ -58,6 +58,9 @@ jobs:
             eval sudo $cmd
           done < <(Rscript -e 'writeLines(remotes::system_requirements("ubuntu", "20.04"))')
 
+      - name: Fix permissions for Python
+        run:  sudo chown 501:20 /usr/local/miniconda/pkgs/cache/b89cf7bf.json
+        
       - name: Install dependencies
         run: |
           remotes::install_deps(dependencies = TRUE)
