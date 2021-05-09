@@ -2,7 +2,7 @@
 % Please edit documentation in R/check_for_python_modules.R
 \name{check_for_python_modules}
 \alias{check_for_python_modules}
-\title{Look for Missing Python Modules and Optionally Install Them into a Virtual Environment}
+\title{Look for Needed Python Modules and Optionally Install Them into a Virtual Environment}
 \usage{
 check_for_python_modules(silent = FALSE, install = FALSE)
 }
@@ -13,7 +13,7 @@ check_for_python_modules(silent = FALSE, install = FALSE)
 modules if missing.}
 }
 \value{
-Invisibly, a named logical vector giving the success or not of finding
+Invisibly, a named logical vector giving the success (or not) of finding
 and possibly installing the modules of interest.
 }
 \description{
