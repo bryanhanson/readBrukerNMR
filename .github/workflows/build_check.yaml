@@ -82,7 +82,7 @@ jobs:
           remotes::install_cran("roxygen2")
         shell: Rscript {0}
 
-      - name: Setup reticulate virtual environment (Linux, OSX)
+      - name: Setup r-reticulate virtual environment (Linux, OSX)
         if: runner.os != 'Windows'
         run: |
           library("reticulate")
@@ -90,14 +90,18 @@ jobs:
           py_install("nmrglue", envname = "r-reticulate")
         shell: Rscript {0}
 
-      - name: Setup reticulate virtual environment (Windows)
+      - name: Install nmrglue using conda on Windows
+        if: runner.os == 'Windows'
+        run: |
+          conda install -c spectrocat nmrglue
+
+      - name: Setup r-reticulate virtual environment (Windows)
         if: runner.os == 'Windows'
         run: |
           library("reticulate")
           use_virtualenv("r-reticulate")
           py_install("nmrglue", envname = "r-reticulate", method = "conda", channel = "jjhelmus/nmrglue")
         shell: Rscript {0}
-
 
       - name: Roxygenize
         run: |
