@@ -90,11 +90,11 @@ jobs:
           py_install("nmrglue", envname = "r-reticulate")
         shell: Rscript {0}
 
-      - name: Install nmrglue via shell / conda on Windows
-      # https://anaconda.org/spectrocat/nmrglue
-        if: runner.os == 'Windows'
-        run: |
-          conda install -c spectrocat nmrglue
+      # - name: Install nmrglue via shell / conda on Windows
+      # # https://anaconda.org/spectrocat/nmrglue
+      #   if: runner.os == 'Windows'
+      #   run: |
+      #     conda install -c spectrocat nmrglue
 
       - name: Setup r-reticulate virtual environment (Windows)
         if: runner.os == 'Windows'
