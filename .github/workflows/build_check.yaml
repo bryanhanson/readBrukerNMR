@@ -23,7 +23,6 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel
-        python -m pip install nmrglue
 
   R-CMD-check:
     runs-on: ${{ matrix.config.os }}
@@ -79,6 +78,13 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
           remotes::install_cran("roxygen2")
+        shell: Rscript {0}
+
+      - name: Setup reticulate virtual environment
+        run: |
+          library("reticulate")
+          use_virtualenv('r-reticulate')
+          py_install('nmrglue', envname = 'r-reticulate')
         shell: Rscript {0}
 
       - name: Roxygenize
