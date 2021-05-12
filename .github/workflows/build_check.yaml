@@ -101,7 +101,7 @@ jobs:
         run: |
           library("reticulate")
           use_virtualenv("r-reticulate")
-          py_install("nmrglue", envname = "r-reticulate", method = "conda", channel = "https://anaconda.org/spectrocat/nmrglue/files")
+          py_install("nmrglue", envname = "r-reticulate", method = "conda", channel = "https://anaconda.org/spectrocat/nmrglue")
         shell: Rscript {0}
 
       - name: Roxygenize
